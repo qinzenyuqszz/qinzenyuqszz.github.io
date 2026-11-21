@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>²âÊÔÒ³Ãæ</title>
+    <title>Test Page</title>
     <style>
         * {
             margin: 0;
@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
         body {
-            font-family: "Microsoft Yahei", sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #f0f7ff;
             padding: 40px;
         }
@@ -56,8 +56,8 @@
 <body>
     <div class="container">
         <h1>Hello HTML Test</h1>
-        <p>ÕâÊÇÒ»¸ö»ù´¡²âÊÔÒ³Ãæ£¬°üº¬ HTML + CSS + JS</p>
-        <button id="btn">µãÎÒ»ñÈ¡µ±Ç°Ê±¼ä</button>
+        <p>This is a simple test page with HTML, CSS and JavaScript.</p>
+        <button id="btn">Click to show current time</button>
         <div id="output"></div>
     </div>
 
@@ -67,7 +67,7 @@
 
         btn.addEventListener('click', () => {
             const now = new Date().toLocaleString();
-            output.innerText = `µ±Ç°Ê±¼ä£º${now}`;
+            output.innerText = `Current time: ${now}`;
         });
     </script>
 </body>
