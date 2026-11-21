@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>²âÊÔÒ³Ãæ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background-color: #f0f7ff;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 128, 0.15);
+        }
+        h1 {
+            color: #226;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #444;
+            margin-bottom: 12px;
+        }
+        #btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #4080ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #btn:hover {
+            background: #2f6bdd;
+        }
+        #output {
+            margin-top: 16px;
+            padding: 12px;
+            background: #f8fbff;
+            border: 1px solid #ddebfa;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello HTML Test</h1>
+        <p>ÕâÊÇÒ»¸ö»ù´¡²âÊÔÒ³Ãæ£¬°üº¬ HTML + CSS + JS</p>
+        <button id="btn">µãÎÒ»ñÈ¡µ±Ç°Ê±¼ä</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const output = document.getElementById('output');
+
+        btn.addEventListener('click', () => {
+            const now = new Date().toLocaleString();
+            output.innerText = `µ±Ç°Ê±¼ä£º${now}`;
+        });
+    </script>
+</body>
+</html>
